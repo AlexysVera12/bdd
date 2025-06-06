@@ -1,0 +1,40 @@
+drop table cuentas;
+create table cuentas(
+	numero_cuenta char(5) not null,
+	cedula_propietario char(5) not null,
+	fecha_creacion date not null,
+	saldo money not null,
+	constraint cuentas_pk primary key(numero_cuenta)
+);
+
+insert into cuentas
+values('48125','10245','12/03/2021',1250);
+
+insert into cuentas
+values('92741','58420','25/07/2019',3487);
+
+insert into cuentas
+values('71304','32158','30/11/2022',820);
+
+insert into cuentas
+values('66012','96547','18/05/2018',5102);
+
+insert into cuentas
+values('54098','24680','01/01/2020',2300);
+
+insert into cuentas
+values('37159','77451','09/09/2023',985);
+
+insert into cuentas
+values('88901','11932','15/02/2021',4675);
+
+insert into cuentas
+values('10234','50001','22/06/2020',3333);
+
+insert into cuentas
+values('23456','88888','05/08/2022',1125);
+
+insert into cuentas
+values('99887','43521','27/12/2017',7800);
+
+select * from cuentas
