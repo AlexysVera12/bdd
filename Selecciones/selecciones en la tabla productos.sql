@@ -34,5 +34,5 @@ values(1008,'Silla Ergonómica',149.00,20);
 select * from productos;
 select * from productos where nombre like 'Q%';
 select * from productos where descripcion is null;
-select * from productos where precio between '2' and ''
+select * from productos where precio between '2' and '3'
 
